@@ -1,0 +1,364 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>ghq</title>
+
+    <!-- Bootstrap Core CSS -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Custom CSS -->
+    <link href="css/sb-admin.css" rel="stylesheet">
+
+    <!-- Morris Charts CSS -->
+    <link href="css/plugins/morris.css" rel="stylesheet">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
+    <!-- Custom Fonts -->
+    <link href="font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+        <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+        <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+
+
+    <script>
+    $(document).ready(function(){
+      $(imag).mouseover(function(){
+        $(aparece).css("display", "block");
+      });
+      $(imag).mouseout(function(){
+        $(aparece).css("display", "none");
+      });
+
+      $(imag2).mouseover(function(){
+        $(aparece2).css("display", "block");
+      });
+      $(imag2).mouseout(function(){
+        $(aparece2).css("display", "none");
+      });
+      $(imag3).mouseover(function(){
+        $(aparece3).css("display", "block");
+      });
+      $(imag3).mouseout(function(){
+        $(aparece3).css("display", "none");
+      });
+      $(imag4).mouseover(function(){
+        $(aparece4).css("display", "block");
+      });
+      $(imag4).mouseout(function(){
+        $(aparece4).css("display", "none");
+      });
+    });
+
+    </script>
+
+
+<style media="screen">
+  .side-nav {
+    width: 100px;
+  }
+  #wrapper {
+    padding-left: 100px;
+  }
+  .side-nav>li>a{
+    width: 100px;
+  }
+  .navbar-inverse .navbar-nav>.active>a, .navbar-inverse .navbar-nav>.active>a:focus, .navbar-inverse .navbar-nav>.active>a:hover {
+    font-size: 40px;
+  }
+  .navbar-nav>li {
+    font-size: 30px;
+  }
+</style>
+</head>
+
+<body>
+
+    <div id="wrapper">
+
+        <!-- Navigation -->
+        <nav class="navbar navbar-inverse navbar-fixed-top" role="navigation">
+            <!-- Brand and toggle get grouped for better mobile display -->
+            <div class="container">
+              <div class="cold-md4">
+                sa
+              </div>
+            </div>
+            <!-- Sidebar Menu Items - These collapse to the responsive navigation menu on small screens -->
+              <div class="collapse navbar-collapse navbar-ex1-collapse">
+                  <ul class="nav navbar-nav side-nav">
+                    <li class="">
+                        <a href="index.html"><i class="fa fa-fw fa-user"></i></a>
+                    </li>
+                    <li class="active">
+                        <a href="charts.html"><i class="fa fa-fw fa-table"></i></a>
+                    </li>
+                    <li>
+                        <a href="tables.html"><i class="fa fa-fw fa-camera-retro"></i></a>
+                    </li>
+                    <li>
+                        <a href="forms.html"><i class="fa fa-fw fa-paw"></i></a>
+                    </li>
+                    <li>
+                        <a href="bootstrap-elements.html"><i class="fa fa-fw fa-heart"></i></a>
+                    </li>
+                    <li>
+                        <a href="bootstrap-grid.html"><i class="fa fa-fw fa-wrench"></i></a>
+                    </li>
+                    <li>
+                        <a href="javascript:;" data-toggle="collapse" data-target="#demo"><i class="fa fa-fw fa-arrows-v"></i><i class="fa fa-fw fa-caret-down"></i></a>
+                        <ul id="demo" class="collapse">
+                            <li>
+                                <a href="#"></a>
+                            </li><span>
+                    12 <i class="fa fa-fw fa-edit" style="padding-top:20px"></i>
+                  </span>
+                            <li>
+                                <a href="#"></a>
+                            </li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+            <!-- /.navbar-collapse -->
+        </nav>
+
+        <div id="page-wrapper" style="margin:0; padding:0;">
+          <div class="container-fluid" style="padding:0; margin:0">
+
+              <div class="col-md-3" style="padding:0; margin:0; height:200px;">
+                <img src="images/profile.jpg" class="img-responsive center-block" style="width:100%" alt="" />
+              </div>
+
+              <div class="col-md-5" style="padding:0;margin:0; height:200px;">
+                <img src="images/mapa.png" width="100% cover" class="img-responsive center-block" alt="" style="max-height:200px"/>
+              </div>
+
+              <div class="col-md-4" style="margin:0;padding:0;height:200px;">
+
+                <div class="col-md-3" style="padding:0; margin:0; height:200px;">
+                  <div class="imag" width="100%" id="imag" height="200px" style="cursor:pointer;position:relative;width:100%; height:200px; background:url(images/meu1.jpg)100% 100%;margin:0;padding:0; background-size:cover; background-position:center">
+                    <div class="aparece" id="aparece" style="width:100%; height:200px; position:absolute; display:none; text-align:center; padding-top:90%; background:rgba(0, 0, 0, 0.5)">
+                    <span style="font-size:25px; color:#f8f8f8">5 </span><i class="fa fa-heart center-block" style="font-size:30px; color:#ff4455"></i>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-md-3" style="padding:0; margin:0; height:200px;">
+                  <div class="imag" width="100%" id="imag2" height="200px" style="cursor:pointer;position:relative;width:100%; height:200px; background:url(images/meu2.jpg)100% 100%;margin:0;padding:0; background-size:cover; background-position:center">
+                    <div class="aparece" id="aparece2" style="width:100%; height:200px; position:absolute; display:none; text-align:center; padding-top:90%; background:rgba(0, 0, 0, 0.5)">
+                    <span style="font-size:25px; color:#f8f8f8">15 </span><i class="fa fa-heart center-block" style="font-size:30px; color:#ff4455"></i>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-md-3" style="padding:0; margin:0; height:200px;">
+                  <div class="imag" width="100%" id="imag3" height="200px" style="cursor:pointer;position:relative;width:100%; height:200px; background:url(images/meu3.jpg)100% 100%;margin:0;padding:0; background-size:cover; background-position:center">
+                    <div class="aparece" id="aparece3" style="width:100%; height:200px; position:absolute; display:none; text-align:center; padding-top:90%; background:rgba(0, 0, 0, 0.5)">
+                    <span style="font-size:25px; color:#f8f8f8">11 </span><i class="fa fa-heart center-block" style="font-size:30px; color:#ff4455"></i>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-md-3" style="padding:0; margin:0; height:200px; ">
+                  <div class="imag" width="100%" id="imag4" height="200px" style="cursor:pointer;position:relative;width:100%; height:200px; background:url(images/meu4.jpg)100% 100%;margin:0;padding:0; background-size:cover; background-position:center">
+                    <div class="aparece" id="aparece4" style="width:100%; height:200px; position:absolute; display:none; text-align:center; padding-top:90%; background:rgba(0, 0, 0, 0.5)">
+                    <span style="font-size:25px; color:#f8f8f8">23 </span><i class="fa fa-heart center-block" style="font-size:30px; color:#ff4455"></i>
+                    </div>
+                  </div>
+                </div>
+
+
+              </div>
+
+
+              </div>
+            </div>
+
+            <div class="col-md-6" style="background:#fff;height:110px; border-bottom-left-radius:10px">
+              <div style="margin-left:10px;">
+                <span style="font-size:30px;letter-spacing:-2px;">Nome do perfil</span>
+                <p>
+                  <span style="padding-right:15px">
+                    <i class="fa fa-fw fa-map-marker" style=" "></i> Marialva - PR
+                  </span>
+                  <span style="padding-right:15px">
+                    <i class="fa fa-fw fa-phone" style=""></i>(44) 98027802
+                  </span>
+                  <span style="padding-right:15px">
+                    <i class="fa fa-fw fa-heart" style=""></i>5 Animais
+                  </span>
+                  <span>
+                    <i class="fa fa-fw fa-facebook-square" style="padding-top:20px; font-size:30px; color:#3B5998"></i>
+                  </span>
+                  <span>
+                    <i class="fa fa-fw fa-twitter-square" style="padding-top:20px; font-size:30px; color:#54ABEE"></i>
+                  </span>
+                  <span style="float:right"><i class="fa fa-fw fa-cog center-block" style="font-size:40px;"></i></span>
+                </p>
+              </div>
+            </div>
+            <div class="col-md-2" style="background:#ededed; height:110px;">
+              <div class="" style="margin:0 auto; width:100px; text-align:center">
+
+
+              <i class="fa fa-fw fa-camera center-block" style="font-size:60px; padding-top:30px"></i><br>
+              <span style="font-size:9px">Adicionar novo Pet</span>
+
+              </div>
+            </div>
+            <div class="col-md-4" style="background:#a06e9d;height:110px; color:#d6bebe; margin:0;border-bottom-right-radius:10px">
+                <div class="center-block" style="margin:0 auto; width:100px">
+                  <span style="font-size:30px">4</span> <i class="fa fa-fw fa-paw" style="font-size:30px; padding-top:40px;"></i><span style="margin-left:15px"></span>
+                </div>
+            </div>
+<style media="screen">
+  .image {
+    width: 100%;
+    height: 230px;
+    background-position: center;
+    max-width: 100%;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+  }
+  .conteudo {
+    background: #e5e5e5
+  }
+</style>
+<div class="container-fluid" style="margin:0; padding:0;">
+
+  <div class="" style="width:100%; height:auto;">
+    <div class="col-md-3" style="padding-top:20px">
+      <div class="image" id="rss" style="position:relative;background:url(images/1.jpg) 100% 100%; background-size:cover; background-position:center">
+        <div class="rs" id="rs" style="position:absolute;top:190px;display:none;width:100%; background:rgba(255, 255, 255, 0.7); padding:10px;border-top-right-radius: 5px;border-top-left-radius: 5px;">
+          <div class="" style="margin:0 auto; width:90%;color:#000 ; text-align:center">
+            <span style="padding-right:20px; text-align:center">
+              20 <i class="fa fa-fw fa-paw" style="font-size:15px;"></i>
+            </span>
+            <span style="padding-right:20px;text-align:center">
+              5km <i class="fa fa-fw fa-map-marker" style="font-size:15px;"></i>
+            </span>
+            <span style="padding-right:20px;text-align:center">
+              2 anos <i class="fa fa-fw fa-calendar" style="font-size:15px;"></i>
+            </span>
+          </div>
+        </div>
+      </div>
+      <div class="conteudo" style="padding:10px;border-bottom-right-radius: 5px;border-bottom-left-radius: 5px;">
+        <span style="font-size:20px; font-weight:800">Nome do cachorro</span><br>
+        <span>Raca do cachorro</span>
+      </div>
+    </div>
+  </div>
+
+  <div class="" style="width:100%; height:auto;">
+    <div class="col-md-3" style="padding-top:20px">
+      <div class="image" id="rss2" style="position:relative;background:url(images/2.jpg) 100% 100%; background-size:cover; background-position:center">
+        <div class="rs" id="rs2" style="position:absolute;top:190px;display:none;width:100%; background:rgba(255, 255, 255, 0.7); padding:10px;border-top-right-radius: 5px;border-top-left-radius: 5px;">
+          <div class="" style="margin:0 auto; width:90%;color:#000 ; text-align:center">
+            <span style="padding-right:20px; text-align:center">
+              20 <i class="fa fa-fw fa-paw" style="font-size:15px;"></i>
+            </span>
+            <span style="padding-right:20px;text-align:center">
+              5km <i class="fa fa-fw fa-map-marker" style="font-size:15px;"></i>
+            </span>
+            <span style="padding-right:20px;text-align:center">
+              2 anos <i class="fa fa-fw fa-calendar" style="font-size:15px;"></i>
+            </span>
+          </div>
+        </div>
+      </div>
+      <div class="conteudo" style="padding:10px;border-bottom-right-radius: 5px;border-bottom-left-radius: 5px;">
+        <span style="font-size:20px; font-weight:800">Nome do cachorro</span><br>
+        <span>Raca do cachorro</span>
+      </div>
+    </div>
+  </div>
+
+  <div class="" style="width:100%; height:auto;">
+    <div class="col-md-3" style="padding-top:20px">
+      <div class="image" id="rss3" style="position:relative;background:url(images/3.jpg) 100% 100%; background-size:cover; background-position:center">
+        <div class="rs" id="rs3" style="position:absolute;top:190px;display:none;width:100%; background:rgba(255, 255, 255, 0.7); padding:10px;border-top-right-radius: 5px;border-top-left-radius: 5px;">
+          <div class="" style="margin:0 auto; width:90%;color:#000 ; text-align:center">
+            <span style="padding-right:20px; text-align:center">
+              20 <i class="fa fa-fw fa-paw" style="font-size:15px;"></i>
+            </span>
+            <span style="padding-right:20px;text-align:center">
+              5km <i class="fa fa-fw fa-map-marker" style="font-size:15px;"></i>
+            </span>
+            <span style="padding-right:20px;text-align:center">
+              2 anos <i class="fa fa-fw fa-calendar" style="font-size:15px;"></i>
+            </span>
+          </div>
+        </div>
+      </div>
+      <div class="conteudo" style="padding:10px;border-bottom-right-radius: 5px;border-bottom-left-radius: 5px;">
+        <span style="font-size:20px; font-weight:800">Nome do cachorro</span><br>
+        <span>Raca do cachorro</span>
+      </div>
+    </div>
+  </div>
+
+  <div class="" style="width:100%; height:auto;">
+    <div class="col-md-3" style="padding-top:20px">
+      <div class="image" id="rss4" style="position:relative;background:url(images/4.jpg) 100% 100%; background-size:cover; background-position:center">
+        <div class="rs" id="rs4" style="position:absolute;top:190px;display:none;width:100%; background:rgba(255, 255, 255, 0.7); padding:10px;border-top-right-radius: 5px;border-top-left-radius: 5px;">
+          <div class="" style="margin:0 auto; width:90%;color:#000 ; text-align:center">
+            <span style="padding-right:20px; text-align:center">
+              20 <i class="fa fa-fw fa-paw" style="font-size:15px;"></i>
+            </span>
+            <span style="padding-right:20px;text-align:center">
+              5km <i class="fa fa-fw fa-map-marker" style="font-size:15px;"></i>
+            </span>
+            <span style="padding-right:20px;text-align:center">
+              2 anos <i class="fa fa-fw fa-calendar" style="font-size:15px;"></i>
+            </span>
+          </div>
+        </div>
+      </div>
+      <div class="conteudo" style="padding:10px;border-bottom-right-radius: 5px;border-bottom-left-radius: 5px;">
+        <span style="font-size:20px; font-weight:800">Nome do cachorro</span><br>
+        <span>Raca do cachorro</span>
+      </div>
+    </div>
+  </div>
+
+
+
+
+<div class="container" style="height:900px">
+
+</div>
+</div>
+            <!-- /.container-fluid -->
+
+        </div>
+        <!-- /#page-wrapper -->
+
+    </div>
+    <!-- /#wrapper -->
+
+
+
+
+
+
+    <!-- Bootstrap Core JavaScript -->
+    <script src="js/bootstrap.min.js"></script>
+
+    <!-- Morris Charts JavaScript -->
+    <script src="teste.js"></script>
+    <script src="js/plugins/morris/raphael.min.js"></script>
+    <script src="js/plugins/morris/morris.min.js"></script>
+    <script src="js/plugins/morris/morris-data.js"></script>
+
+</body>
+
+</html>

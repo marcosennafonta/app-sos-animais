@@ -9,4 +9,9 @@
 ##Sem fins lucrativos
 (Ainda não temos um nome)
 
-![Logo] (logo.png)
+#Logo1
+![Logo1] (logo.png)
+
+#Tela (Logado) Dashboard
+![Logo2] (wireframe-dashboard.jpg)
+
